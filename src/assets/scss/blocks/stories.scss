@@ -1,0 +1,87 @@
+.stories {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 13px;
+	grid-template-rows: 195px;
+	
+}
+
+.stories__item {
+	border-radius: 5px;
+	overflow: hidden;
+	// background-color: #ccc;
+	box-shadow: 0 5px 15px rgba($black, .2);
+
+	position: relative;
+
+	cursor: pointer;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		background-image: linear-gradient(to bottom, 
+		rgba($black, .8), 
+		rgba($black, 0) 50%, 
+		rgba($black, .4) 75%, 
+		rgba($black, .8) );
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	&:hover {
+		.stories-photo {
+			transform: scale(1.3);
+			transition-duration: 3s;
+		}
+		
+	}
+}
+
+.stories-photo {
+	display: block;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.05);
+	transition: transform 1.5s ease;
+}
+
+.stories__title {
+	color: $white;
+	font-size: 1.2rem;
+	// font-weight: 300;
+	line-height: 1.3;
+	
+	width: 100%;
+	padding: 1.4rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.stories-data {
+	font-size: 1.2rem;
+	color: $white;
+	font-weight: 300;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 3;
+
+	padding: 1.4rem	1.7rem;
+}
+
