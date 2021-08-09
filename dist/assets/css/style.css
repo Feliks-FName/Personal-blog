@@ -271,8 +271,7 @@ body {
 }
 
 .main {
-    padding-top: 10rem;
-    padding-left: 300px;
+    padding: 10rem 0 8rem 300px;
 }
 
 .page {
@@ -382,6 +381,7 @@ body {
     -moz-column-gap: 13px;
     column-gap: 13px;
     grid-template-rows: 195px;
+    margin-bottom: 3rem;
 }
 
 .stories__item {
@@ -457,4 +457,312 @@ body {
     right: 0;
     z-index: 3;
     padding: 1.4rem 1.7rem;
+}
+
+.add-post {
+    margin-bottom: 3rem;
+    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45);
+    background-color: #121212;
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+}
+
+.add-post__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.add-post__textarea {
+    display: block;
+    width: 75%;
+    height: 26px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #fff;
+    resize: none;
+}
+
+.add-post__textarea::-webkit-input-placeholder {
+    font-size: 1.5rem;
+    color: #D2D2D2;
+}
+
+.add-post__textarea::-moz-placeholder {
+    font-size: 1.5rem;
+    color: #D2D2D2;
+}
+
+.add-post__textarea:-ms-input-placeholder {
+    font-size: 1.5rem;
+    color: #D2D2D2;
+}
+
+.add-post__textarea::-ms-input-placeholder {
+    font-size: 1.5rem;
+    color: #D2D2D2;
+}
+
+.add-post__textarea::placeholder {
+    font-size: 1.5rem;
+    color: #D2D2D2;
+}
+
+.add-post__form-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.add-post__file {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background: #EBEBEB;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.add-post__file .input-img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    -webkit-transform: translate(-53%, -53%);
+    -ms-transform: translate(-53%, -53%);
+    transform: translate(-53%, -53%);
+}
+
+.add-post__file:hover {
+    background-color: #d9d9d9;
+}
+
+.add-post__file .input {
+    display: none;
+}
+
+.add-post__send {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+    border-radius: 50%;
+    background: #3137C9;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    margin-left: 1.5rem;
+}
+
+.add-post__send:hover {
+    background-color: #2a2fac;
+}
+
+.add-post__send:focus {
+    outline: none;
+}
+
+.button-img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    -webkit-transform: translate(-47%, -53%);
+    -ms-transform: translate(-47%, -53%);
+    transform: translate(-47%, -53%);
+}
+
+.post {
+    background-color: #202020;
+    border-radius: 5px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+.post__header {
+    margin: -2.5rem -2.5rem 2.5rem;
+}
+
+.post__header--video {
+    margin: 0 0 2.5rem;
+}
+
+.post__header .post-header__link {
+    text-decoration: none;
+}
+
+.post-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post__content {
+    margin-bottom: 2rem;
+}
+
+.post__title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.post__title .post-title__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post__title .post-title__link:hover {
+    text-decoration: underline;
+}
+
+.post__text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #D2D2D2;
+}
+
+.post__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.post-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #828282;
+    line-height: 1.2;
+}
+
+.post-data__item:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    position: relative;
+    top: -1.5px;
+    margin: 0 1.5rem;
+}
+
+.post-data__item .category {
+    color: inherit;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.post-data__item .category:hover {
+    text-decoration: underline;
+}
+
+.post__read {
+    color: #107EFF;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.post__read:hover {
+    text-decoration: underline;
+}
+
+.embed {
+    position: relative;
+    overflow: hidden;
+}
+
+.embed::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.embed iframe,
+.embed video,
+.embed object,
+.embed embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.pagination__item {
+    margin: 0 0.5rem;
+}
+
+.pagination__link {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-color: #0d0d0d;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 4rem;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    -webkit-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.pagination__link:hover {
+    background-color: #272727;
+}
+
+.pagination__link.active {
+    background-color: #3137C9;
+    -webkit-box-shadow: 0 0 10px rgba(49, 55, 201, 0.15);
+    box-shadow: 0 0 10px rgba(49, 55, 201, 0.15);
 }
