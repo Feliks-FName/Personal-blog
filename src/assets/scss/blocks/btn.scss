@@ -36,4 +36,13 @@
 			background-color: darken($btn-blue, 15%);
 		}
 	}
+
+	&--rounded {
+		border-radius: .41em;
+	}
+
+	&--sm {
+		line-height: 1;
+		padding: 0.717em 1.3em
+	}
 }

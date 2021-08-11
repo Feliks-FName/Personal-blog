@@ -1,0 +1,55 @@
+.form__group {
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+.form__control {
+	display: block;
+	width: 100%;
+
+	background: none;
+	border: none;
+	border-bottom: 1px solid #3F3F3F;
+	border-radius: none;
+	box-shadow: none;
+
+	padding: .5rem 0;
+
+	font-family: inherit;
+	font-size: 1.4rem;
+	color: $white;
+	outline: none;
+
+	&:focus + .textarea__line{
+		width: 100%;
+	}
+
+
+	&::placeholder {
+		color: rgba($white, .2);
+	}
+
+	&--textarea {
+		height: 30px;
+		resize: none;
+		overflow: hidden;
+	}
+}
+
+.textarea__line {
+	width: 0;
+	height: 1px;
+
+	background-color: $btn-blue;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+
+	box-shadow: 5px 5px 13px $btn-blue;
+
+	transition: width .3s ease-out;
+}
+
+    

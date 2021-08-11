@@ -1,0 +1,40 @@
+.related {
+	padding-bottom: .5rem;
+	border-bottom: 1px solid #1C1C1C;
+}
+
+.related__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.related__list-item {
+	margin-bottom: 2.5rem;
+	width: 50%;
+
+}
+
+.related__list-title {
+	line-height: normal;
+	color: #F3EBA2;
+	font-size: 1.4rem;
+	font-weight: 500;
+
+	margin-bottom: 0.5rem;
+
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+
+	.related__list-link {
+		color: inherit;
+	}
+}
+
+.related__list-date {
+	color: #828282;
+
+	font-size: 1.2rem;
+	line-height: auto;
+}
+
