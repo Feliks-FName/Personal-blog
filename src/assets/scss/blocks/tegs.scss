@@ -1,0 +1,22 @@
+.tegs__list {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	
+	margin-bottom: 3rem;
+
+	.tegs__list-item {
+		padding: .4rem .9rem;
+
+		font-size: 1.1rem;
+		line-height: auto;
+		text-align: center;
+		vertical-align: middle;
+
+		background-color: #EA8C1E;
+		border-radius: 3px;
+
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+}

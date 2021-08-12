@@ -1,6 +1,10 @@
 .form__group {
 	margin-bottom: 1.5rem;
 	position: relative;
+
+	&--profile {
+		margin-bottom: 2.5rem;
+	}
 }
 
 .form__control {
@@ -10,10 +14,10 @@
 	background: none;
 	border: none;
 	border-bottom: 1px solid #3F3F3F;
-	border-radius: none;
+	border-radius: 0;
 	box-shadow: none;
 
-	padding: .5rem 0;
+	padding: .5rem 0 .75rem;
 
 	font-family: inherit;
 	font-size: 1.4rem;
