@@ -13,7 +13,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="">
 	
-	<title>Works</title>
+	<title>Signin</title>
 </head>
 
 <body class="">
@@ -146,78 +146,39 @@
 		<main class="main">
 			<div class="container">
 				
-				<h1 class="page__title">Мои работы</h1>
+				<h1 class="page__title page__title--profile page__title--center">Вход</h1>
 				
-				<article class="work">
-					<div class="work__preview">
-						<img class="work__preview-img" src="assets/images/work/preview01.jpg" alt="preview01">
+				
+				<form class="form form--auth" action="/" method="POST">
+				
+					<div class="form__group form__group--profile">
+						<input class="form__control" type="email" placeholder="Ваш e-mail">
+						<span class="textarea__line"></span>
 					</div>
 				
-					<div class="work__content">
-						<h2 class="work__title">
-							<a class="work__title-link" href="#" target="_blank">altermono.com</a>
-						</h2>
-				
-						<p class="work__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
-							posuere
-							tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia
-							eu
-							auctor
-							nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-						</p>
-				
-						<ul class="tegs__list">
-							<li class="tegs__list-item">дизайн</li>
-							<li class="tegs__list-item">создание сайта</li>
-							<li class="tegs__list-item">SMM</li>
-						</ul>
-				
-						<div class="work__footer">
-							<a class="btn btn--blue btn--rounded btn--sm" href="#" target="_blank">Перейти на сайт
-							</a>
-						</div>
-				
-					</div><!-- work__content -->
-				
-				</article><!-- work -->
-				
-				
-				
-				
-				<article class="work">
-					<div class="work__preview">
-						<img class="work__preview-img" src="assets/images/work/preview02.jpg" alt="preview01">
+					<div class="form__group form__group--profile">
+						<input class="form__control" type="password" placeholder="Пароль">
+						<span class="textarea__line"></span>
 					</div>
 				
-					<div class="work__content">
-						<h2 class="work__title">
-							<a class="work__title-link" href="#" target="_blank">altermono.com</a>
-						</h2>
-				
-						<p class="work__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
-							posuere
-							tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia
-							eu
-							auctor
-							nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-						</p>
-				
-						<ul class="tegs__list">
-							<li class="tegs__list-item">дизайн</li>
-							<li class="tegs__list-item">создание сайта</li>
-							<li class="tegs__list-item">SMM</li>
-						</ul>
-				
-						<div class="work__footer">
-							<a class="btn btn--blue btn--rounded btn--sm" href="#" target="_blank">Перейти на сайт
-							</a>
+					<div class="form__footer form__footer--center">
+						<div class="form__group form__group--profile">
+							<button class="btn btn--blue btn--rounded btn--sm">Войти</button>
 						</div>
 				
-					</div><!-- work__content -->
+						<ul class="form__footer-list">
+							<li class="form__footer-item">
+								<a class="form__footer-link" href="signup.html">регистрация</a>
+							</li>
 				
-				</article><!-- work -->
+							<li class="form__footer-item">
+								<a class="form__footer-link" href="resetPassword.html">восстановить</a>
+							</li>
+						</ul>
+				
+					</div><!-- form__footer -->
+				
+				</form><!-- form -->
 			</div>
 
 		</main>
