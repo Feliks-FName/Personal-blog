@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="dist/assets/css/style.css">
+
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+
+	<title>Блог начинающего front-end разработчика</title>
+</head>
+
+<body>
+
+	<div class="page">
+
+		<!-- Header -->
+		<header class="header">
+
+			<div class="header__left">
+				<nav class="nav">
+
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="index.html">Главная</a>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link has-subnav" href="#">Статьи</a>
+
+							<ul class="subnav">
+								<li>
+									<a class="subnav__link" href="#">Создание сайтов</a>
+								</li>
+
+								<li>
+									<a class="subnav__link" href="#">Интернет-маркетинг</a>
+								</li>
+
+								<li>
+									<a class="subnav__link" href="#">Продвижение видео</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link" href="text.html">Обо мне</a>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link" href="#">Реклама</a>
+						</li>
+					</ul>
+
+				</nav>
+			</div>
+
+
+			<div class="header__right">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="profile.html">Профиль</a>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link" href="signin.html">Выйти</a>
+						</li>
+					</ul>
+				</nav>
+
+				<form class="search" action="/" method="POST">
+					<input class="search__input" type="text" placeholder="Поиск по блогу">
+				</form>
+
+			</div>
+
+		</header>
+
+
+		<!-- sidebar -->
+		<aside class="sidebar">
+
+			<div class="sidebar__header">
+				<img src="src/assets/images/sidebar/Header-img.jpg" alt="header-Photo" class="sidebar__header-img">
+			</div>
+
+			<div class="sidebar__content">
+				<div class="profile">
+
+					<img src="https://place-hold.it/100x100/" alt="Photo-person" class="profile-img">
+
+					<div class="profile__name">
+						<p>Феликс Котов</p>
+					</div>
+
+					<div class="profile__theme-blog">
+						<p>блог начинающего верстальщика</p>
+					</div>
+
+
+					<ul class="social">
+						<li class="social__item">
+							<a class="social__link" href="" target="_blank">
+								<img src="src/assets/images/sidebar/instagram (1) 1.svg" alt="instagram">
+							</a>
+						</li>
+
+						<li class="social__item">
+							<a class="social__link" href="" target="_blank">
+								<img src="src/assets/images/sidebar/vk 1.svg" alt="Vk">
+							</a>
+						</li>
+
+						<li class="social__item">
+							<a class="social__link" href="" target="_blank">
+								<img src="src/assets/images/sidebar/pinterest 1.svg" alt="pinterest">
+							</a>
+						</li>
+					</ul><!-- social -->
+
+					<div class="profile__text">
+						<p>Добро пожаловать на мой блог! Тут я рассказываю о своих достижения в области верстки и
+							программировании, а так же пишу про всякие фичи CSS, которые мне удалось найти и показываю
+							как и
+							где их можно реализовать. Созданием сайтов занимаюсь 5 месяцев. Ищу свободную вакансию
+							верстальщика
+							в IT компаниии. Сколько часов практики не скажу, но вот мои работы смотрите ниже.
+							Самоучка.
+						</p>
+					</div>
+
+
+				</div><!-- profile -->
+			</div><!-- sidebar__content -->
+
+			<div class="sidebar__footer">
+				<a class="btn btn--red" href="work.html">Мои работы</a>
+				<button class="btn btn--blue" type="button">Написать мне</button>
+			</div>
+
+		</aside><!-- sidebar -->
+
+
+		<!-- main -->
+		<main class="main">
+			<div class="container">
+
+				<h1 class="page__title page__title--profile">Профиль</h1>
+
+				<form action="/" method="POST" class="form">
+					<div class="cabinet">
+
+						<div class="cabinet__form">
+							<div class="form__group form__group--profile">
+								<input class="form__control" type="text" placeholder="Имя" value="Феликс">
+								<span class="textarea__line"></span>
+							</div>
+
+							<div class="form__group form__group--profile">
+								<input class="form__control" type="email" placeholder="Ваш e-mail" value="xxxx@mail.ru">
+								<span class="textarea__line"></span>
+							</div>
+
+							<div class="form__group form__group--profile">
+								<input class="form__control" type="password" placeholder="Новый пароль">
+								<span class="textarea__line"></span>
+							</div>
+
+							<div class="form__group form__group--profile">
+								<input class="form__control" type="password" placeholder="Повторите пароль">
+								<span class="textarea__line"></span>
+							</div>
+						</div><!-- cabinet__form -->
+
+						<div class="cabinet__avatar">
+							<img class="profile__avatar-img" src="https://place-hold.it/150x150/ccc" alt="">
+
+							<label class="cabinet__file">
+								<input type="file">
+								выбрать аватар
+							</label>
+						</div>
+
+					</div><!-- cabinet -->
+
+					<div class="form__footer">
+						<button class="btn btn--blue btn--rounded btn--sm" type="submit">Сохранить</button>
+					</div>
+
+				</form><!-- form -->
+
+			</div><!-- container -->
+
+		</main>
+	</div>
+	<!-- /page -->
+
+	<!-- Js -->
+	<script src="dist/assets/js/app.js"></script>
+</body>
+
+</html>
