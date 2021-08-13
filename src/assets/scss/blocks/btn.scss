@@ -27,7 +27,8 @@
 		background-color: $btn-red;
 		box-shadow: 0 7px 17px - 10px rgba($btn-red, .35);
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: darken($btn-red, 15%);
 		}
 	}
@@ -36,7 +37,8 @@
 		background-color: $btn-blue;
 		box-shadow: 0 7px 17px - 10px rgba($btn-blue, .35);
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: darken($btn-blue, 15%);
 		}
 	}

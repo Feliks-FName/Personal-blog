@@ -1,5 +1,11 @@
 .page {
 	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	min-height: 100vh;
 }
 
 .page__title {
@@ -12,5 +18,9 @@
 
 	&--profile {
 		margin-bottom: 6rem;
+	}
+
+	&--center {
+		text-align: center;
 	}
 }

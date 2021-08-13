@@ -11,6 +11,10 @@ body {
     background-color: $secondary/* #ccc */;
     font-size: 1.4rem;
     color: $white;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
 }
 
 a {
@@ -45,6 +49,8 @@ a {
 @import "blocks/work.scss";
 @import "blocks/tegs.scss";
 @import "blocks/cabinet.scss";
+
+@import "blocks/modal.scss";
 
 
 
