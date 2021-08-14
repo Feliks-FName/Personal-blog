@@ -2,11 +2,19 @@
 	padding: 0 2rem;
 }	
 
+.profile {
+	margin-top: -5rem;
+
+	@include breakpoint($tablet-bp) {
+		margin-top: -3.25rem;
+		position: relative;
+	}
+}
+
 
 .profile-img {
 	display: block;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto 2rem;
 	position: relative;
 
 	width: 10rem;
@@ -16,6 +24,17 @@
 	border: 2px solid $white;
 
 	box-shadow: 0 7px 20px rgba(#333, .25);
+
+	@include breakpoint($tablet-bp) {
+		width: 6.5rem;
+		height: 6.5rem;
+
+		margin-left: 0;
+
+		position: absolute;
+		left: 0;
+	}
+
 }
 
 .profile__name {

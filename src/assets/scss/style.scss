@@ -1,4 +1,7 @@
+// out: ../dist/assets/css/style.min.css, sourceMap: true
+
 @import 'blocks/vars';
+@import 'blocks/mixins';
 @import 'vendor/style';
 
 
@@ -51,6 +54,8 @@ a {
 @import "blocks/cabinet.scss";
 
 @import "blocks/modal.scss";
+
+@import "blocks/burger.scss";
 
 
 

@@ -11,11 +11,25 @@
 	left: 0;
 	bottom: 0;
 	z-index: $z-index-sidebar;
+
+	transition: transform .2s linear;
+
+	@include breakpoint($tablet-bp) {
+		transform: translateX(-100%);
+
+		.show-sidebar & {
+			transform: translateX(0);
+		}
+	}
 }
 
 .sidebar__header {
 	height: 180px;
 	background-color: $secondary;
+
+	@include breakpoint($tablet-bp) {
+			height: 10rem;
+		}
 
 	.sidebar__header-img {
 		display: block;
@@ -23,13 +37,11 @@
 		height: 100%;
 		-o-object-fit: cover;
 		object-fit: cover;
-
 	}
 }
 
 .sidebar__content {
 	text-align: center;
-	margin-top: -5rem;
 }
 
 .sidebar__footer {

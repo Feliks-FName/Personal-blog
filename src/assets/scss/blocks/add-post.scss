@@ -16,9 +16,9 @@
 
 .add-post__textarea {
 	display: block;
-	width: 75%;
+	flex-grow: 1;
 	height: 26px;
-
+	overflow: hidden;
 	border: none;
 
 	background: transparent;
@@ -29,6 +29,8 @@
 
 	resize: none;
 
+	outline: none;
+
 	&::placeholder {
 		font-size: 1.5rem;
 		color: #D2D2D2
@@ -37,8 +39,9 @@
 
 .add-post__form-actions {
 	display: flex;
+	flex-shrink: 0;
 	justify-content: flex-end;
-	width: 25%;
+	width: 120px;
 }
 
 
