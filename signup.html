@@ -96,12 +96,15 @@
 
 					<img src="https://place-hold.it/100x100/" alt="Photo-person" class="profile-img">
 
-					<div class="profile__name">
-						<p>Феликс Котов</p>
-					</div>
 
-					<div class="profile__theme-blog">
-						<p>блог начинающего верстальщика</p>
+					<div class="proifile__header">
+						<div class="profile__name">
+							<p>Феликс Котов</p>
+						</div>
+
+						<div class="profile__theme-blog">
+							<p>блог начинающего верстальщика</p>
+						</div>
 					</div>
 
 
@@ -138,6 +141,47 @@
 
 
 				</div><!-- profile -->
+
+				<nav class="nav nav--mobile">
+
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="index.html">Главная</a>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link has-subnav" href="#">Статьи</a>
+
+							<ul class="subnav">
+								<li>
+									<a class="subnav__link" href="#">Создание сайтов</a>
+								</li>
+
+								<li>
+									<a class="subnav__link" href="#">Интернет-маркетинг</a>
+								</li>
+
+								<li>
+									<a class="subnav__link" href="#">Продвижение видео</a>
+								</li>
+
+								<li>
+									<a class="subnav__link" href="#">Профиль</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link" href="../text.html">Обо мне</a>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link" href="#">Реклама</a>
+						</li>
+					</ul>
+
+				</nav>
+
 			</div><!-- sidebar__content -->
 
 			<div class="sidebar__footer">
@@ -300,6 +344,9 @@
 	<div class="modal">
 		<video class="modal__vodeo" src="" poster="https://place-hold.it/420x580/ccc"></video>
 	</div><!-- modal -->
+
+	<!-- Фильтр при открытом меню на Page -->
+	<div class="page__blur"></div>
 
 
 	<!-- Js -->
