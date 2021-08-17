@@ -6,7 +6,7 @@
 	margin-top: -5rem;
 
 	@include breakpoint($tablet-bp) {
-		margin-top: -3.25rem;
+		margin-top: -1.85rem;
 		position: relative;
 	}
 }
@@ -37,11 +37,30 @@
 
 }
 
+.proifile__header {
+	margin-bottom: 1.6rem;
+	text-align: center;
+
+	@include breakpoint($tablet-bp) {
+		text-align: left;
+		padding: 3rem 0 1.6rem 8rem;
+
+		border-bottom: 1px solid #1C1C1C;
+
+	}
+
+}
+
 .profile__name {
 	font-size: 1.8rem;
 	color: $white;
 
 	margin-top: 1.9rem;
+
+	@include breakpoint($tablet-bp) {
+		font-size: 1.5rem;
+		margin-top: 0;
+	}
 }
 
 .profile__theme-blog {
@@ -50,6 +69,10 @@
 	color: $text-color;
 
 	margin-top: 0.5rem;
+
+	@include breakpoint($tablet-bp) {
+		font-size: 1.2rem;
+	}
 }
 
 .profile__text {
@@ -62,5 +85,9 @@
 
 	padding: 3rem 0;
 	margin: 3rem 0;
+
+	@include breakpoint($tablet-bp) {
+		display: none;	
+	}
 }
 

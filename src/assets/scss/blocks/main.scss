@@ -3,5 +3,11 @@
 	
 	@include breakpoint($tablet-bp) {
 		padding-left: 0;
+
+	}
+
+	@include breakpoint($mobile-bp) {
+		padding-top: 7rem;
+		padding-bottom: 5rem;
 	}
 }

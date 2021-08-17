@@ -12,15 +12,29 @@
 	bottom: 0;
 	z-index: $z-index-sidebar;
 
-	transition: transform .2s linear;
+	transition: transform .2s linear, width .2s linear;
 
 	@include breakpoint($tablet-bp) {
 		transform: translateX(-100%);
+
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - 3.9rem);
+
+		top: 4rem;
+		overflow: auto;
+
+		background-color: #0D0D0D;
+		
 
 		.show-sidebar & {
 			transform: translateX(0);
 		}
 	}
+
+	 @include breakpoint($nav_sm-bp) {
+		 width: 100%;
+	 }
 }
 
 .sidebar__header {
@@ -49,4 +63,10 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2rem;
+
+	@include breakpoint($tablet-bp) {
+		flex-grow: 1;
+		align-items: flex-end;
+		padding-bottom: 1.5rem;
+	}
 }

@@ -18,6 +18,10 @@
 
 	&--profile {
 		margin-bottom: 6rem;
+
+		@include breakpoint($mobile-bp) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	&--center {

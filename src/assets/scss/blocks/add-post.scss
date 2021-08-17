@@ -42,6 +42,10 @@
 	flex-shrink: 0;
 	justify-content: flex-end;
 	width: 120px;
+
+	@include breakpoint($mobile-bp) {
+		width: 110px;
+	}
 }
 
 
@@ -67,6 +71,10 @@
 		z-index: 1;
 
 		transform: translate(-53%, -53%);
+
+		@include breakpoint($mobile-bp) {
+			transform: translate(-51%, -53%);
+		}
 	}
 
 	&:hover {
@@ -75,6 +83,11 @@
 
 	.input {
 		display: none;
+	}
+
+	@include breakpoint($mobile-bp) {
+		width: 4rem;
+		height: 4rem;
 	}
 }
 
@@ -105,6 +118,11 @@
 
 	&:focus {
 		outline: none;
+	}
+
+	@include breakpoint($mobile-bp) {
+		width: 4rem;
+		height: 4rem;
 	}
 }
 

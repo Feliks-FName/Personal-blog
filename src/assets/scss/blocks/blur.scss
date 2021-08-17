@@ -1,0 +1,24 @@
+.page__blur {
+			
+	display: none;
+	width: 100vw;
+	height: 100vh;
+
+	backdrop-filter: blur(15px);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	opacity: 0;
+
+	transition: opacity .3s linear;
+
+	@include breakpoint($tablet-bp) {
+
+		.show-sidebar & {
+			opacity: 1;
+			transition: opacity .3s linear;
+		}
+	}		
+}

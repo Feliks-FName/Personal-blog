@@ -7,6 +7,10 @@
 
 	box-shadow: 0 15px 25px rgba($black, .35);
 	overflow: hidden;
+
+	@include breakpoint($mobile-bp) {
+		padding: 1.5rem;
+	}
 }
 
 .post__header {
@@ -41,6 +45,7 @@
 
 	.post-title__link {
 		color: inherit;
+		line-height: 1.2;
 	}
 
 	&--no-margin {
@@ -131,6 +136,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .post-data {
@@ -139,6 +145,10 @@
 
 	color: #828282;
 	line-height: 1.2;
+
+	@include breakpoint($mobile-bp) {
+		width: 100%;
+	}
 }
 
 .post-data__item {
@@ -171,6 +181,10 @@
 .post__read {
 	color: #107EFF;
 	font-size: 1.4rem;
+
+	@include breakpoint($mobile-bp) {
+		margin-top: 1.7rem;
+	}
 }
 
 

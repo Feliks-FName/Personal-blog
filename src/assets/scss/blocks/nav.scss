@@ -1,12 +1,31 @@
 .nav {
+
+	&--mobile {
+		display: none;
+	}
 	@include breakpoint($tablet-bp) {
 		display: none;
 	}
+
+	@include breakpoint($tablet-bp) {
+		&--mobile {
+			display: block;
+			font-size: 1.6rem;
+			margin: 3rem 0;
+		}
+	}
+
+	
 }
 
 
 .nav__list {
 	display: flex;
+
+	@include breakpoint($tablet-bp) {
+		flex-direction: column;
+		text-align: left;
+	}
 
 	.nav__item {
 		position: relative;
@@ -16,10 +35,20 @@
 			.nav__link {
 				background-color: $btn-blue;
 				text-decoration: none;
+
 			}
 
 			> .subnav {
 				display: block;
+			}
+		}
+
+		@include breakpoint($tablet-bp) {
+			&:hover {
+
+				.nav__link {
+					background: 0;
+				}
 			}
 		}
 	}
@@ -35,6 +64,14 @@
 		padding: 1.5rem;
 
 		transition: background-color .2s ease;
+
+		@include breakpoint($tablet-bp) {
+			font-size: 1.6rem;
+			line-height: 1.2;
+			text-transform: capitalize;
+
+			padding: 1.2rem;
+		}
 
 
 		&.has-subnav {
@@ -56,6 +93,11 @@
 
 				transform: translateY(-50%);
 			}
+		}
+
+		@include breakpoint($tablet-bp) {
+			padding-left: 0;
+			padding-right: 0;
 		}
 	
 	}

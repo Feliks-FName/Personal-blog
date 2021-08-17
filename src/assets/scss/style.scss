@@ -15,7 +15,8 @@ body {
     font-size: 1.4rem;
     color: $white;
 
-	&.no-scroll {
+	&.no-scroll,
+	&.show-sidebar {
 		overflow: hidden;
 	}
 }
@@ -56,6 +57,9 @@ a {
 @import "blocks/modal.scss";
 
 @import "blocks/burger.scss";
+@import "blocks/blur.scss";
+
+
 
 
 

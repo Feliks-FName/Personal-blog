@@ -16,7 +16,7 @@
 	<title>Works</title>
 </head>
 
-<body class="show-sidebar">
+<body class="">
 
 	<div class="page">
 
@@ -97,14 +97,21 @@
 			<div class="sidebar__content">
 				<div class="profile">
 		
-					<img src="https://place-hold.it/100x100/" alt="Photo-person" class="profile-img">
+					<picture>
+						<source srcset="https://via.placeholder.com/65x65" media="(max-width:575px)">
+						<img src="https://via.placeholder.com/100" alt="Photo-person" class="profile-img">
+					</picture>
 		
-					<div class="profile__name">
-						<p>Феликс Котов</p>
-					</div>
 		
-					<div class="profile__theme-blog">
-						<p>блог начинающего верстальщика</p>
+		
+					<div class="proifile__header">
+						<div class="profile__name">
+							<p>Феликс Котов</p>
+						</div>
+		
+						<div class="profile__theme-blog">
+							<p>блог начинающего верстальщика</p>
+						</div>
 					</div>
 		
 		
@@ -139,6 +146,46 @@
 		
 		
 				</div><!-- profile -->
+		
+				<nav class="nav nav--mobile">
+		
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="index.html">Главная</a>
+						</li>
+		
+						<li class="nav__item">
+							<a class="nav__link has-subnav" href="#">Статьи</a>
+		
+							<ul class="subnav">
+								<li>
+									<a class="subnav__link" href="#">Создание сайтов</a>
+								</li>
+		
+								<li>
+									<a class="subnav__link" href="#">Интернет-маркетинг</a>
+								</li>
+		
+								<li>
+									<a class="subnav__link" href="#">Продвижение видео</a>
+								</li>
+		
+								<li>
+									<a class="subnav__link" href="#">Профиль</a>
+								</li>
+							</ul>
+						</li>
+		
+						<li class="nav__item">
+							<a class="nav__link" href="../text.html">Обо мне</a>
+						</li>
+		
+						<li class="nav__item">
+							<a class="nav__link" href="#">Реклама</a>
+						</li>
+					</ul>
+		
+				</nav>
 			</div><!-- sidebar__content -->
 		
 			<div class="sidebar__footer">
@@ -155,7 +202,10 @@
 				
 				<article class="work">
 					<div class="work__preview">
-						<img class="work__preview-img" src="assets/images/work/preview01.jpg" alt="preview01">
+						<picture>
+							<source srcset="https://via.placeholder.com/575x300" media="(max-width:575px)">
+							<img class="work__preview-img" src="assets/images/work/preview01.jpg" alt="preview01">
+						</picture>
 					</div>
 				
 					<div class="work__content">
@@ -192,7 +242,11 @@
 				
 				<article class="work">
 					<div class="work__preview">
-						<img class="work__preview-img" src="assets/images/work/preview02.jpg" alt="preview01">
+						<picture>
+							<source srcset="https://via.placeholder.com/575x300" media="(max-width:575px)">
+				
+							<img class="work__preview-img" src="assets/images/work/preview02.jpg" alt="preview01">
+						</picture>
 					</div>
 				
 					<div class="work__content">
@@ -226,6 +280,7 @@
 			</div>
 
 		</main>
+
 	</div>
 	<!-- /page -->
 
@@ -316,6 +371,8 @@
 	<div class="modal">
 		<video class="modal__vodeo" src="" poster="https://place-hold.it/420x580/ccc"></video>
 	</div><!-- modal -->
+	<div class="page__blur"></div>
+
 
 
 	<!-- Js -->
