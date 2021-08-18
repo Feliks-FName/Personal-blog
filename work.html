@@ -59,6 +59,11 @@
 					</ul>
 
 				</nav>
+
+				<button class="burger active-js" type="button" id="sidebarTogle">
+					<span>Открыть навигацию</span>
+				</button>
+
 			</div>
 
 
@@ -85,7 +90,7 @@
 
 
 		<!-- sidebar -->
-		<aside class="sidebar">
+		<aside class="sidebar" id="sidebar">
 
 			<div class="sidebar__header">
 				<img src="src/assets/images/sidebar/Header-img.jpg" alt="header-Photo" class="sidebar__header-img">
@@ -165,10 +170,11 @@
 									<a class="subnav__link" href="#">Продвижение видео</a>
 								</li>
 
-								<li>
-									<a class="subnav__link" href="#">Профиль</a>
-								</li>
 							</ul>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__link" href="profile.html">Профиль</a>
 						</li>
 
 						<li class="nav__item">
@@ -186,7 +192,7 @@
 
 			<div class="sidebar__footer">
 				<a class="btn btn--red" href="work.html">Мои работы</a>
-				<button class="btn btn--blue" type="button">Написать мне</button>
+				<button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
 			</div>
 
 		</aside><!-- sidebar -->
@@ -289,11 +295,11 @@
 
 
 	<!-- modals-windows -->
-	<div class="modal">
+	<div class="modal" id="contact-modal">
 		<div class="modal__content">
 
-			<button class="modal__close">
-				<img class="close" src="../assets/images/modal/cancel.svg" alt="Закрыть">
+			<button class="modal__close" data-close="modal-close">
+				<img class="close" src="src/assets/images/modal/cancel.svg" alt="Закрыть">
 			</button>
 
 			<form class="form" action="/" method="POST">
@@ -308,10 +314,9 @@
 					<span class="textarea__line"></span>
 				</div>
 
-
 				<div class="form__group form__group--profile">
 					<textarea class="form__control form__control--textarea" name="comments-text" id=""
-						placeholder="Текст сообщения"></textarea>
+						placeholder="Текст сообщения" data-autoresize></textarea>
 					<span class="textarea__line"></span>
 				</div>
 
@@ -340,36 +345,36 @@
 
 
 
-	<div class="modal">
+	<div class="modal" id="modal-share">
 		<div class="modal__content modal__content--share">
 
-			<button class="modal__close">
-				<img class="close" src="../assets/images/modal/cancel.svg" alt="Закрыть">
+			<button class="modal__close" data-close="modal__close">
+				<img class="close" src="src/assets/images/modal/cancel.svg" alt="Закрыть">
 			</button>
 
 			<ul class="social social--share">
 
 				<li class="social__item">
 					<a class="social__link" href="">
-						<img src="../assets/images/share/facebook.svg" alt="Фейсбук">
+						<img src="src/assets/images/share/facebook.svg" alt="Фейсбук">
 					</a>
 				</li>
 
 				<li class="social__item">
 					<a class="social__link" href="">
-						<img src="../assets/images/share/twitter (1) 1.svg" alt="Твиттер">
+						<img src="src/assets/images/share/twitter (1) 1.svg" alt="Твиттер">
 					</a>
 				</li>
 
 				<li class="social__item">
 					<a class="social__link" href="">
-						<img src="../assets/images/share/vk 2.svg" alt="Vk">
+						<img src="src/assets/images/share/vk 2.svg" alt="Vk">
 					</a>
 				</li>
 
 				<li class="social__item">
 					<a class="social__link" href="">
-						<img src="../assets/images/share/copy 1.svg" alt="Copy">
+						<img src="src/assets/images/share/copy 1.svg" alt="Copy">
 					</a>
 				</li>
 			</ul><!-- social -->
@@ -383,10 +388,11 @@
 
 
 
-	<div class="modal">
-		<video class="modal__vodeo" src="" poster="https://place-hold.it/420x580/ccc"></video>
+	<div class="modal" id="story-modal">
+		<div class="modal__content modal__content--story">
+			<video class="modal__vodeo" src="" poster="https://place-hold.it/420x580/ccc"></video>
+		</div>
 	</div><!-- modal -->
-
 
 	<!-- Фильтр при открытом меню на Page -->
 	<div class="page__blur"></div>
