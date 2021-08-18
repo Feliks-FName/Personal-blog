@@ -7,7 +7,7 @@ title: Home
 <!-- stories -->
 <div class="stories">
 
-	<div class="stories__item">
+	<div class="stories__item" data-modal="story-modal">
 		<img class="stories-photo" src="assets/images/stories/1.jpg" alt="">
 		<div class="stories__title">
 			<p>Отдыхаю на природе</p>
@@ -16,7 +16,7 @@ title: Home
 		<time class="stories-data" datetime="2021-08-5">5.08.2021</time>
 	</div>
 
-	<div class="stories__item">
+	<div class="stories__item" data-modal="story-modal">
 		<img class="stories-photo" src="assets/images/stories/2.jpg" alt="">
 		<div class="stories__title">
 			<p>Заканчиваю сложный проект</p>
@@ -25,7 +25,7 @@ title: Home
 		<time class="stories-data" datetime="2021-07-29">29.07.2021</time>
 	</div>
 
-	<div class="stories__item">
+	<div class="stories__item" data-modal="story-modal">
 		<img class="stories-photo" src="assets/images/stories/3.png" alt="">
 		<div class="stories__title">
 			<p>Переехал в новую квартиру</p>
@@ -34,7 +34,7 @@ title: Home
 		<time class="stories-data" datetime="2021-07-15">15.07.2021</time>
 	</div>
 
-	<div class="stories__item">
+	<div class="stories__item" data-modal="story-modal">
 		<img class="stories-photo" src="assets/images/stories/4.jpg" alt="">
 		<div class="stories__title">
 			<p>Осень пришла!</p>
@@ -49,7 +49,8 @@ title: Home
 <!-- Add post -->
 <div class="add-post">
 	<form class="add-post__form" action="/" method="POST">
-		<textarea class="add-post__textarea" name="post-text" placeholder="Есть что написать?"></textarea>
+		<textarea class="add-post__textarea" name="post-text" placeholder="Есть что написать?"
+			data-autoresize></textarea>
 
 		<div class="add-post__form-actions">
 			<label class="add-post__file" for="add-post-file">

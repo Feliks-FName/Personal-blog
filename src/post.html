@@ -7,7 +7,8 @@ title: Post
 
 	<div class="post__actions">
 		<a class="post__actions-link" href="index.html">вернуться назад</a>
-		<a class="post__actions-link share" href="#">
+
+		<a class="post__actions-link share" href="#" data-modal="modal-share">
 			поделиться<img src="assets/images/post/share 1.svg" alt="поделиться">
 		</a>
 	</div>
@@ -128,8 +129,8 @@ title: Post
 		<form class="form" action="/" method="POST">
 
 			<div class="form__group">
-				<textarea class="form__control form__control--textarea" name="comments-text" id=""
-					placeholder="Текст комментария">
+				<textarea class="form__control form__control--textarea" name="comments-text"
+					placeholder="Текст комментария" data-autoresize>
 					</textarea>
 				<span class="textarea__line"></span>
 			</div>

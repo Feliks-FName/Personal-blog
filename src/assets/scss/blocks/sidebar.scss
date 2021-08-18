@@ -62,11 +62,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 2rem;
+	padding: 2rem 2rem 8rem;
 
 	@include breakpoint($tablet-bp) {
 		flex-grow: 1;
 		align-items: flex-end;
-		padding-bottom: 1.5rem;
+		// padding-bottom: 6rem;
 	}
 }

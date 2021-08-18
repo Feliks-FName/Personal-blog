@@ -18,7 +18,7 @@
 
 	visibility: hidden;
 	opacity: 0;
-	transition: all .4s linear;
+	transition: all .3s linear;
 
 	&--active {
 		visibility: visible;
@@ -39,8 +39,18 @@
 
 	position: relative;
 
+	@include breakpoint($mobile-bp) {
+		padding: 4rem 3rem 2rem;
+	}
+
 	&--share {
 		padding: 8rem 14rem;
+	}
+
+	&--story {
+		padding: 0;
+		background: none;
+		max-width: 42rem;
 	}
 }
 
@@ -84,9 +94,29 @@
 
 	font-size: 1.2rem;
 
+	@include breakpoint($mobile-bp) {
+		flex-direction: column;
+	}
+
 	.modal__footer-item:not(:last-child) {
 		margin-right: 2rem;
 
+		@include breakpoint($mobile-bp) {
+			margin-right: 0;
+		}
+	}
+
+	.modal__footer-item {
+
+		@include breakpoint($mobile-bp) {
+			&:last-child {
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	@include breakpoint($mobile-bp) {
+		margin-top: 2rem;
 	}
 }
 
@@ -97,6 +127,14 @@
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+.modal__vodeo {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	margin: 0 auto;
 }
 
 
